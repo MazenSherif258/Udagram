@@ -60,6 +60,10 @@ jobs:
           # TODO: Install, build, deploy in both apps
           command: |
             echo "# TODO: Install, build, deploy in both apps"
+      - run:
+          name: Deply Backend
+          command: |
+            npm run api:deploy
             
 workflows:
   udagram:
