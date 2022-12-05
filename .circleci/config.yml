@@ -61,9 +61,13 @@ jobs:
           command: |
             echo "# TODO: Install, build, deploy in both apps"
       - run:
-          name: Depoly Backend
+          name: Depoly Back-End
           command: |
             npm run api:deploy
+      - run:
+          name: Depoly Front-End
+          command: |
+            npm run frontend:deploy
             
 workflows:
   udagram:
