@@ -18,4 +18,5 @@ export const config = {
   jwt: {
     secret: process.env.JWT_SECRET,
   },
+  rds_port: (process.env.RDS_PORT as unknown) as number,
 };

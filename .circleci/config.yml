@@ -61,7 +61,7 @@ jobs:
           command: |
             echo "# TODO: Install, build, deploy in both apps"
       - run:
-          name: Deply Backend
+          name: Depoly Backend
           command: |
             npm run api:deploy
             
