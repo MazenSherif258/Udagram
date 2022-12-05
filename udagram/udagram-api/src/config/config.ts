@@ -7,10 +7,10 @@ dotenv.config();
 // Are Also needed
 
 export const config = {
-  username: `${process.env.POSTGRES_USERNAME}`,
-  password: process.env.POSTGRES_PASSWORD,
-  database: process.env.POSTGRES_DB,
-  host: process.env.POSTGRES_HOST,
+  username: `${process.env.RDS_USERNAME}`,
+  password: process.env.RDS_PASSWORD,
+  database: process.env.RDS_DB_NAME,
+  host: process.env.RDS_HOST,
   aws_region: process.env.AWS_REGION,
   aws_profile: process.env.AWS_PROFILE,
   aws_media_bucket: process.env.AWS_BUCKET,
@@ -18,5 +18,5 @@ export const config = {
   jwt: {
     secret: process.env.JWT_SECRET,
   },
-  rds_port: (process.env.RDS_PORT as unknown) as number,
+  rds_port: process.env.RDS_PORT as unknown as number,
 };
