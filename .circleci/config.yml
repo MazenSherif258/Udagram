@@ -92,7 +92,7 @@ workflows:
                 - main
           type: approval
           requires:
-            - build
+            - build_test
       - deploy:
           requires:
             - hold
