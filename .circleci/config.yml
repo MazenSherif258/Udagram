@@ -15,8 +15,6 @@ jobs:
       - node/install:
           node-version: '14.15'         
       - checkout
-      - run : 
-          command: sudo apt-get update && sudo apt-get install -y libgbm-dev
       # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
@@ -46,11 +44,6 @@ jobs:
           name: API Build
           command: |
             npm run api:build
-      # TODO: Run FrontEnd Unit Tests
-      - run:
-          name: Test Front-End-Unit
-          command: |
-            npm run frontend:test
       # TODO: Run FrontEnd E2E Tests
       - run:
           name: Test Front-End-E2E
