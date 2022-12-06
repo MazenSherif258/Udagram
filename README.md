@@ -30,7 +30,7 @@ Provision the necessary AWS services needed for running the application:
 1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
 
 ### LINK
-http://udagram-frontend11251.s3-website-us-east-1.amazonaws.com/home
+http://udagram-frontend124251.s3-website-us-east-1.amazonaws.com/home
 
 ## Testing
 
