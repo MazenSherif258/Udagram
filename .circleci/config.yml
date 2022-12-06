@@ -16,7 +16,6 @@ jobs:
       - node/install:
           node-version: '14.15'         
       - checkout
-      - browser-tools/install-chrome
       - browser-tools/install-chromedriver
       # Use root level package.json to install dependencies in the frontend app
       - run:
