@@ -4,7 +4,7 @@ dotenv.config();
 // ENV variables 
 // - AWS_ACCESS_KEY_ID
 // - AWS_SECRET_ACCESS_KEY
-// Are Also needed
+// Are Also needed 
 
 export const config = {
   username: `${process.env.RDS_USERNAME}`,
