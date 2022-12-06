@@ -45,6 +45,10 @@ jobs:
           name: API Build
           command: |
             npm run api:build
+      # TODO: Install Chrome For Unit Testing
+      - run:
+          name: Install Chrome Web Driver
+          command: browser-tools/install-chrome
       # TODO: Run FrontEnd Unit Tests
       - run:
           name: Test Front-End-Unit
